@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>www.hostal.com</title>
+		<meta charset="utf=8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <script src="bootstrap/js/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<style>
+    h1{
+    	
+    }
+
+    body{
+    	padding-top: 40px;
+    }
+
+  /*  #nv{
+    	font-weight: 600;
+    }*/
+
+    #cn{
+        	 background-image: linear-gradient(190deg,#ca4be0,#8ee04b,#4be0cf);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+        }
+
+
+    #btn1{
+   font-size: 16px;
+   font-weight: bold;
+   border: none;
+   background-color: white;
+   padding: 7px 30px;
+   border-radius: 10px;
+   border: 3px solid white;
+}
+
+#btn2{
+  font-size: 16px;
+  font-weight: bold;
+  border: 3px solid white;
+  background-color: transparent;
+  padding: 7px 25px;
+  border-radius: 10px;
+}
+
+#btn1:hover{
+  background-image: linear-gradient(225deg,#4be0cf,#ca4be0);
+}
+
+#btn2:hover{
+  background-image: linear-gradient(to left,#4be0cf,#ca4be0);
+}
+	</style>
+
+<body data-spy="scroll" data-target="#navbar1">
+     <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar1">
+     	<div class="container">
+     		<div class="navbar-header">
+     		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+     			<span class="icon-bar"></span>
+     			<span class="icon-bar"></span>
+     			<span class="icon-bar"></span>
+     			<span class="icon-bar"></span>
+     		</button>
+     		 <a href="" class="navbar-brand"><strong>Hostel</strong></a>
+     	    </div><!-- end navbar-header -->
+
+     	    <div class="collapse navbar-collapse" id="navbar-collapse">
+     	    	<a href="" class="btn btn-warning navbar-btn navbar-right">Download App</a> 
+     	    	<ul class=" nav navbar-nav " id="nv">
+     	    		<li><a href="#feedback" >Feedback</a></li>
+     	    	<li class="dropdown">
+     	   		 <a href="#bookings" class="dropdown-toggle" data-toggle="dropdown">New Bookings<span class="caret"></span></a>
+     	         <ul class="dropdown-menu">
+                 <li><a href="#view">View</a></li>
+                 <li><a href="#query">Query</a></li>
+                
+                </ul>
+                </li>
+     	    		 <li><a href="#contact " >Contact Us</a></li>
+     	     		 <!-- <li><a href="#feedback" >Feedback</a></li> -->
+     	    	</ul>
+     	    </div>
+     	</div><!-- end container -->
+     </nav><!-- end navbar -->
+
+         <div class="jumbotron text-center" id="cn">  					
+     						<h1>Welcome to our website</h1>
+     						<p>Here, you will find a student hostel near you.</p>
+                <button id="btn1">Query</button>
+                <button id="btn2">Feedback</button>
+    				</div><!-- end jumbotron -->
+
+     	<!-- Feedback -->
+         
+         <div class="container">
+         	<section>
+         		<div class="page-header" id="feedback">
+    			<h2>Feedback.<small>check out the feedbacks</small></h2>
+    		</div> 
+         		<div class="row page-header">
+         			<div class="col-md-4">
+         				<blockquote>
+         			  <p>Nice place to find a student room in a effective price.</p>
+         			  <footer>Nayan</footer>
+         			   </blockquote>
+         			</div>
+         			<div class="col-md-4">
+         			 <blockquote>
+         			  <p>Nice website with very less bugs and very light. I firstly found this website and no need to visit to another one. </p>
+         			  <footer>Sandeep</footer>
+         			   </blockquote>
+         			</div>
+         			<div class="col-md-4">
+         			 <blockquote>
+         			  <p>Little bit problem in the gellary secction, so request you to please solve it. </p>
+         			  <footer>Vivek</footer>
+         			   </blockquote>
+         			</div>
+         		</div>
+         	</section>
+         </div>
+
+         <!-- new bookings -->
+        
+
+
+
+         <div class="container">
+         		<div class="page-header" id="view">
+    			<h2>New Bookings.<small>check out the availablities of the rooms</small></h2>
+    		</div> 
+         <div class="well">
+         	<div class="row">
+         	<div class="col-lg-2">
+         		<th>
+       		<img src="images/9.jpg" alt="image">
+       		</th>  
+         	</div>	
+         	<div class="col-sm-6">
+         		<th>
+         			<h4>Basanti Niwas</h4>
+         			<p>24*7 Electricity availability, 24 hrs water availability.</p>
+         			  <footer><a>-Rs 4000 per month</a></footer>
+         		</th>
+         	</div>
+         	<div class="col-lg-4">
+         		
+         		 <ul class="list-inline text-center">
+         		 <li class="dropdown">
+     	   		 <a href="#bookings" class="dropdown-toggle" data-toggle="dropdown">Explore<span class="caret"></span></a>
+     	         <ul class="dropdown-menu dropdown-menu-right">
+                 <li><a href="#">
+                 	     <div class="container">
+     	<section>
+     		<div class="page-header" id="galary">
+     			<h2>Gallary.<small>Check out our awsm gallary</small></h2>
+     		</div>
+           <div class="row">
+           	<div class="col-lg-12">
+           		<h4>Images of Basanti Niwas</h4>
+           	</div>
+           	<div class="col-lg-3">
+           		<a href="images/Home.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/Home.jpg " alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/s.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/s.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/10.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/10.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/3.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/3.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           </div><!-- end row -->
+     	</section>
+     </div>
+                 </a></li>
+                </ul>
+                </li>
+               
+                <li><a href="">Direction</a></li>
+                <li><p></p></li>
+            </ul>
+         	</div>
+           </div>
+         	</div>
+         </div>
+
+
+          <div class="container">
+         <div class="well">
+         	<div class="row">
+         	<div class="col-lg-2">
+         		<th>
+       		<img src="images/11.jpg">
+       		</th>  
+         	</div>	
+         	<div class="col-sm-6">
+         		<th>
+         			<h4>XYZ</h4>
+         			<p>24*7 Electricity availability, 24 hrs water availability, Mess etc.</p>
+         			  <footer><a>-Rs 4500 per month</a></footer>
+         		</th>
+         	</div>
+         	<div class="col-lg-4">
+         		
+         		 <ul class="list-inline text-center">
+               
+                <li class="dropdown">
+     	   		 <a href="#bookings" class="dropdown-toggle" data-toggle="dropdown">Explore<span class="caret"></span></a>
+     	         <ul class="dropdown-menu dropdown-menu-right">
+                 <li><a href="#">
+                 	     <div class="container">
+     	<section>
+     		
+           <div class="row">
+           	<div class="col-lg-12">
+           		<h4>Images of xyz</h4>
+           	</div>
+           	<div class="col-lg-3">
+           		<a href="images/Home.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/Home.jpg " alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/s.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/s.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/10.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/10.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/3.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/3.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           </div><!-- end row -->
+     	</section>
+     </div>
+                 </a></li>
+                </ul>
+                </li>
+                <li><a href="">Direction</a></li>
+                <li><p></p></li>
+            </ul>
+         	</div>
+           </div>
+         	</div>
+         </div>
+
+
+          <div class="container">
+         <div class="well">
+         	<div class="row">
+         	<div class="col-lg-2">
+         		<th>
+       		<img src="images/9.jpg">
+       		</th>  
+         	</div>	
+         	<div class="col-sm-6">
+         		<th>
+         			<h4>pqr</h4>
+         			<p>24 hrs water, mess available</p>
+         			 <footer><a>-Rs 3000 per month</a></footer>
+         		</th>
+         	</div>
+         	<div class="col-lg-4">
+         		
+         		 <ul class="list-inline text-center">
+                 <li class="dropdown">
+     	   		 <a href="#bookings" class="dropdown-toggle" data-toggle="dropdown">Explore<span class="caret"></span></a>
+     	         <ul class="dropdown-menu dropdown-menu-right">
+                 <li><a href="#">
+                 	     <div class="container">
+     	<section>
+     		
+           <div class="row">
+           	<div class="col-lg-12">
+           		<h4>Images of pqr</h4>
+           	</div>
+           	<div class="col-lg-3">
+           		<a href="images/Home.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/Home.jpg " alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/s.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/s.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/10.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/10.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/3.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/3.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           </div><!-- end row -->
+     	</section>
+     </div>
+                 </a></li>
+                </ul>
+                </li>
+                <li><a href="">Direction</a></li>
+                <li><p></p></li>
+            </ul>
+         	</div>
+           </div>
+         	</div>
+         </div>
+
+          <div class="container">
+         <div class="well">
+         	<div class="row">
+         	<div class="col-lg-2">
+         		<th>
+       		<img src="images/9.jpg">
+       		</th>  
+         	</div>	
+         	<div class="col-sm-6">
+         		<th>
+         			<h4>XYZ</h4>
+         			<p>24*7 Electricity availability, 24 hrs water availability, Mess etc.</p>
+         			  <footer><a>-Rs 4500 per month</a></footer>
+         		</th>
+         	</div>
+         	<div class="col-lg-4">
+         		
+         		 <ul class="list-inline text-center">
+                 <li class="dropdown">
+     	   		 <a href="#bookings" class="dropdown-toggle" data-toggle="dropdown">Explore<span class="caret"></span></a>
+     	         <ul class="dropdown-menu dropdown-menu-right">
+                 <li><a href="#">
+                 	     <div class="container">
+     	<section>
+     		
+           <div class="row">
+           	<div class="col-lg-12">
+           		<h4>Images of xyz</h4>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/Home.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/Home.jpg " alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/s.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/s.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/10.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/10.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/3.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/3.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           </div><!-- end row -->
+     	</section>
+     </div>
+                 </a></li>
+                </ul>
+                </li>
+                <li><a href="">Direction</a></li>
+                <li><p></p></li>
+            </ul>
+         	</div>
+           </div>
+         	</div>
+         </div>
+
+          <div class="container">
+         <div class="well">
+         	<div class="row">
+         	<div class="col-lg-2">
+         		<th>
+       		<img src="images/9.jpg">
+       		</th>  
+         	</div>	
+         	<div class="col-sm-6">
+         		<th>
+         			<h4>XYZ</h4>
+         			<p>24*7 Electricity availability, 24 hrs water availability, Mess etc.</p>
+         			  <footer><a>-Rs 3500 per month</a></footer>
+         		</th>
+         	</div>
+         	<div class="col-lg-4">
+         		
+         		 <ul class="list-inline text-center">
+                 <li class="dropdown">
+     	   		 <a href="#bookings" class="dropdown-toggle" data-toggle="dropdown">Explore<span class="caret"></span></a>
+     	         <ul class="dropdown-menu dropdown-menu-right">
+                 <li><a href="#">
+                 	     <div class="container">
+     	<section>
+    
+           <div class="row">
+           	<div class="col-lg-12">
+           		<h4>Images of xyz</h4>
+           	</div>
+           	<div class="col-lg-3">
+           		<a href="images/Home.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/Home.jpg " alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/s.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/s.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/10.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/10.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/3.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/3.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           </div><!-- end row -->
+     	</section>
+     </div>
+                 </a></li>
+                </ul>
+                </li>
+                      <li><a href="">Direction</a></li>
+                <li><p></p></li>
+            </ul>
+         	</div>
+           </div>
+         	</div>
+         </div>
+
+          <div class="container">
+         <div class="well">
+         	<div class="row">
+         	<div class="col-lg-2">
+         		<th>
+       		<img src="images/9.jpg">
+       		</th>  
+         	</div>	
+         	<div class="col-sm-6">
+         		<th>
+         			<h4>XYZ</h4>
+         			<p>24*7 Electricity availability, 24 hrs water availability, Mess etc.</p>
+         			  <footer><a>-Rs 3900 per month</a></footer>
+         		</th>
+         	</div>
+         	<div class="col-lg-4">
+         		
+         		 <ul class="list-inline text-center">
+                 <li class="dropdown">
+     	   		 <a href="#bookings" class="dropdown-toggle" data-toggle="dropdown">Explore<span class="caret"></span></a>
+     	         <ul class="dropdown-menu dropdown-menu-right">
+                 <li><a href="#">
+                 	     <div class="container">
+     	<section>
+     		
+           <div class="row">
+           	<div class="col-lg-12">
+           		<h4>Images of xyz</h4>
+           	</div>
+           	<div class="col-lg-3">
+           		<a href="images/Home.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/Home.jpg " alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/s.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/s.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/10.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/10.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/3.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/3.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           </div><!-- end row -->
+     	</section>
+     </div>
+                 </a></li>
+                </ul>
+                </li>
+                <li><a href="">Direction</a></li>
+                <li><p></p></li>
+            </ul>
+         	</div>
+           </div>
+         	</div>
+         </div>
+
+          <div class="container">
+         <div class="well">
+         	<div class="row">
+         	<div class="col-lg-2">
+         		<th>
+       		<img src="images/9.jpg">
+       		</th>  
+         	</div>	
+         	<div class="col-sm-6">
+         		<th>
+         			<h4>XYZ</h4>
+         			<p>24*7 Electricity availability, 24 hrs water availability, Mess etc.</p>
+         			  <footer><a>-Rs 4500 per month</a></footer>
+         		</th>
+         	</div>
+         	<div class="col-lg-4">
+         		
+         		 <ul class="list-inline text-center">
+                 <li class="dropdown">
+     	   		 <a href="#bookings" class="dropdown-toggle" data-toggle="dropdown">Explore<span class="caret"></span></a>
+     	         <ul class="dropdown-menu dropdown-menu-right">
+                 <li><a href="#">
+                 	     <div class="container">
+     	<section>
+     		
+           <div class="row">
+           	<div class="col-lg-12">
+           		<h4>Images pqr</h4>
+           	</div>
+          	<div class="col-lg-3">
+           		<a href="images/Home.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/Home.jpg " alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/s.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/s.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/10.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/10.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/3.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/3.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           </div><!-- end row -->
+     	</section>
+     </div>
+                 </a></li>
+                </ul>
+                </li>
+                <li><a href="">Direction</a></li>
+                <li><p></p></li>
+            </ul>
+         	</div>
+           </div>
+         	</div>
+         </div>
+
+          <div class="container">
+         <div class="well">
+         	<div class="row">
+         	<div class="col-lg-2">
+         		<th>
+       		<img src="images/9.jpg">
+       		</th>  
+         	</div>	
+         	<div class="col-sm-6">
+         		<th>
+         			<h4>Apna ghar</h4>
+         			<p>24*7 Electricity availability, 24 hrs water availability, Mess etc.</p>
+         			  <footer><a>-Rs 5000 per month</a></footer>
+         		</th>
+         	</div>
+         	<div class="col-lg-4">
+         		
+         		 <ul class="list-inline text-center">
+                 <li class="dropdown">
+     	   		 <a href="#bookings" class="dropdown-toggle" data-toggle="dropdown">Explore<span class="caret"></span></a>
+     	         <ul class="dropdown-menu dropdown-menu-right">
+                 <li><a href="#">
+                 	     <div class="container">
+     	<section>
+     		
+           <div class="row">
+           	<div class="col-lg-12">
+           		<h4>Images of Apna ghar</h4>
+           	</div>
+          	<div class="col-lg-3">
+           		<a href="images/Home.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/Home.jpg " alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/s.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/s.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/10.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/10.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/3.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/3.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           </div><!-- end row -->
+     	</section>
+     </div>
+                 </a></li>
+                </ul>
+                </li>
+                <li><a href="">Direction</a></li>
+                <li><p></p></li>
+            </ul>
+         	</div>
+           </div>
+         	</div>
+         </div>
+
+          <div class="container">
+         <div class="well">
+         	<div class="row">
+         	<div class="col-lg-2">
+         		<th>
+       		<img src="images/9.jpg">
+       		</th>  
+         	</div>	
+         	<div class="col-sm-6">
+         		<th>
+         			<h4>Ghar</h4>
+         			<p>24*7 Electricity availability, 24 hrs water availability, Mess etc.</p>
+         			  <footer><a>-Rs 4500 per month</a></footer>
+         		</th>
+         	</div>
+         	<div class="col-lg-4">
+         		
+         		 <ul class="list-inline text-center">
+                 <li class="dropdown">
+     	   		 <a href="#bookings" class="dropdown-toggle" data-toggle="dropdown">Explore<span class="caret"></span></a>
+     	         <ul class="dropdown-menu dropdown-menu-right">
+                 <li><a href="#">
+                 	     <div class="container">
+     	<section>
+     	
+           <div class="row">
+           	<div class="col-lg-12">
+           		<h4>Images of Ghar</h4>
+           	</div>
+           	<div class="col-lg-3">
+           		<a href="images/Home.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/Home.jpg " alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/s.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/s.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/10.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/10.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           		<div class="col-lg-3">
+           		<a href="images/3.jpg" class="thumbnail">
+           		<p></p>
+           		<img src="images/3.jpg "alt="image not found" class="img-responsive"></a>
+           	</div>
+           </div><!-- end row -->
+     	</section>
+     </div>
+                 </a></li>
+                </ul>
+                </li>
+                <li><a href="">Direction</a></li>
+                <li><p></p></li>
+            </ul>
+         	</div>
+           </div>
+         	</div>
+         </div>
+
+          <hr>
+
+         <!-- contact us -->
+
+<div class="page-header" id="query">
+    		</div> 
+         <div class="container">
+         	<section>
+         		<div class="row">
+         			<div class="col-lg-4">
+         			<h3>For Any Query Contact Us</h3>
+         			<address>
+         				111,Ganesh nagar<br>
+                         Plot no. 45<br>
+                         New Delhi - 110097<br>
+                         P:- +915678978787
+         			</address>
+         		</div>
+         		<div class="col-lg-8">
+
+         			<form class="form-horizontal" id="contact">
+         				 <div class="form-group">
+                             <label for="user-name" class="col-lg-2 control-label">Name</label>
+                             <div class="col-lg-10">
+                                 <input type="text" class="form-control" id="user-name" placeholder="Enter your name" name="">
+                             </div>
+                         </div><!-- end form-group -->
+                              <div class="form-group">
+                             <label for="user-name" class="col-lg-2 control-label">Email</label>
+                             <div class="col-lg-10">
+                                 <input type="text" class="form-control" id="user-name" placeholder="Enter your name" name="">
+                             </div>
+                         </div><!-- end form-group -->
+                          <div class="form-group">
+                             <label for="user-name" class="col-lg-2 control-label">Your Query </label>
+                             <div class="col-lg-10">
+                                  <textarea name="user-message" id="user-message" class="form-control" col="20" rows="10" placeholder="Enter your message"></textarea>
+                             </div>
+                         </div><!-- end from-group -->
+                          <div class="form-group">
+                             <div class="col-lg-10 col-lg-offset-2">
+                                 <button type="submit" class="btn btn-primary">Submit</button>
+                             </div>
+                         </div>
+         			</form>
+         		</div>
+              </div><!-- end row -->
+         	</section>
+         </div><!-- end container -->
+<hr>
+         <!-- footer -->
+   <footer>
+   	<div class="container text-center" >
+        <ul class="list-inline">
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Youtube</a></li>
+            </ul>
+            <p>&copy; Copyright @ 2020</p>    
+   	</div>
+
+   </footer>
+   
+</body>
+</html>
